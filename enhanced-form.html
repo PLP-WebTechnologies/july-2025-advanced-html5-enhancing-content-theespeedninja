@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content="CycleWorld - Your one-stop shop for premium bicycles and accessories.">
+    <meta name="keywords" content="bicycles, shopping, road bikes, mountain bikes, hybrid bikes, electric bikes, kids' bikes">
+    <meta name="author" content="Danny@bikes">
+    <title>🚲CycleWorld - Bicycle Shopping</title>
+    <link rel="icon" href="https://images.pexels.com/photos/173294/pexels-photo-173294.jpeg" type="image/x-icon">
+
+</head>
+<body>
+
+<header>
+    <center>
+    <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg" alt="A bike image-like wallpaper" 
+        style="width: 90vw; height: 50vh; object-fit: cover; opacity: 1.0;" 
+        title="Bike Image">
+    <h1>🚴 CycleWorld - Bicycle Shopping</h1>
+    <p>Your one-stop shop for premium bicycles and accessories</p>
+    <nav>
+        <a href="#products">Products</a> |
+        <a href="#categories">Categories</a> |
+        <a href="#order-form">Order Form</a> |
+</nav>
+    </center>
+</header>
+
+<main>
+    <section id="products">
+        <h2>Our Top Bicycles</h2>
+        <table border="4" style="width: 30%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Speedster 500</td>
+                    <td>Road Bike</td>
+                    <td>$1,200</td>
+                    <td><img src="https://images.pexels.com/photos/13415391/pexels-photo-13415391.jpeg" alt="Speedster 500"
+                        style="width: 10vw; height: 12vh; object-fill: cover; opacity: 1.0;"></td>
+                </tr>
+                <tr>
+                    <td>Mountain King</td>
+                    <td>Mountain Bike</td>
+                    <td>$1,500</td>
+                    <td><img src="https://images.pexels.com/photos/20333225/pexels-photo-20333225.jpeg" alt="Mountain King"
+                        style="width: 10vw; height: 12vh; object-fill: cover; opacity: 1.0;"></td>
+                </tr>
+                <tr>
+                    <td>Urban Cruiser</td>
+                    <td>Hybrid</td>
+                    <td>$900</td>
+                    <td><img src="https://images.pexels.com/photos/8936922/pexels-photo-8936922.jpeg" alt="Urban Cruiser"
+                        style="width: 10vw; height: 12vh; object-fill: cover; opacity: 1.0;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="categories">
+        <h2>🚵‍♀️Bicycle Categories</h2>
+        <ul>
+            <li>Road Bikes</li>
+            <li>Mountain Bikes</li>
+            <li>Hybrid Bikes</li>
+            <li>Electric Bikes</li>
+            <li>Kids' Bikes</li>
+        </ul>
+        <p>Watch our latest promotional video:</p>
+        <video  controls style="width: 98vw; height: 60vh; object-fit: cover;">
+            <source src="https://videos.pexels.com/video-files/4047863/4047863-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>👤 Personal Information</legend>
+                    <div class="form-row">
+                        <div>
+                            <label for="firstName">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required 
+                                minlength="2" maxlength="50" 
+                                pattern="[A-Za-z\s]+" 
+                                placeholder="Enter your first name"
+                                autocomplete="given-name" >
+                            <small>Letters only, 2-50 characters</small>
+                        </div>
+                    </div>
+                    
+                    <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required 
+                            placeholder="example@domain.com"
+                            autocomplete="email">
+                        <small>We'll never share your email with anyone else</small>
+                        
+                    <div class="form-row">
+                        <div>
+                            <label for="phone">Phone Number<span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" 
+                                    pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{6}" 
+                                    placeholder="+254-701-123456"
+                                    autocomplete="tel">
+                            <small>Format: +000-123-456789</small>
+                        </div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+                <div class="form-row">
+                    <div>
+                        <label for="model">Choose Model:<span class="required">*</span></label>
+                        <select id="model" name="model" required>
+                            <option value="">--Select a Model--</option>
+                            <option>Speedster 500</option>
+                            <option>Mountain King</option>
+                            <option>Urban Cruiser</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <label for="notes">Special Requests:</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Any additional details..."></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
